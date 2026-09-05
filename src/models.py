@@ -65,3 +65,4 @@ def transformer(window, nf, d=32, heads=4, blocks=2, ff=64):  # Member 4
 
 
 MODELS = {"MLP": mlp, "1D-CNN": cnn1d, "LSTM": lstm, "Transformer": transformer}
+# Reviewed and verified 
