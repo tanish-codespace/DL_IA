@@ -1,0 +1,128 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791113884.163780      88 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791113885.579372      88 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+MLP 0 {'MAE': 0.4956, 'RMSE': 0.6966, 'R2': 0.7222, 'epochs': 23, 'secs': 10.8523, 'params': 60673}
+MLP 1 {'MAE': 0.4326, 'RMSE': 0.6359, 'R2': 0.7685, 'epochs': 35, 'secs': 11.8341, 'params': 60673}
+MLP 2 {'MAE': 0.4521, 'RMSE': 0.6357, 'R2': 0.7687, 'epochs': 31, 'secs': 11.2195, 'params': 60673}
+1D-CNN 0 {'MAE': 0.4334, 'RMSE': 0.6285, 'R2': 0.7739, 'epochs': 21, 'secs': 22.3795, 'params': 30145}
+1D-CNN 1 {'MAE': 0.4401, 'RMSE': 0.627, 'R2': 0.775, 'epochs': 27, 'secs': 26.9553, 'params': 30145}
+1D-CNN 2 {'MAE': 0.447, 'RMSE': 0.619, 'R2': 0.7807, 'epochs': 14, 'secs': 19.4286, 'params': 30145}
+LSTM 0 {'MAE': 0.4885, 'RMSE': 0.6679, 'R2': 0.7447, 'epochs': 28, 'secs': 71.9354, 'params': 34497}
+LSTM 1 {'MAE': 0.4464, 'RMSE': 0.6182, 'R2': 0.7812, 'epochs': 24, 'secs': 63.9857, 'params': 34497}
+LSTM 2 {'MAE': 0.516, 'RMSE': 0.7074, 'R2': 0.7136, 'epochs': 28, 'secs': 74.321, 'params': 34497}
+Transformer 0 {'MAE': 0.475, 'RMSE': 0.6975, 'R2': 0.7215, 'epochs': 21, 'secs': 57.6116, 'params': 19521}
+Transformer 1 {'MAE': 0.5087, 'RMSE': 0.6909, 'R2': 0.7267, 'epochs': 21, 'secs': 58.7386, 'params': 19521}
+Transformer 2 {'MAE': 0.527, 'RMSE': 0.7301, 'R2': 0.6949, 'epochs': 19, 'secs': 52.8999, 'params': 19521}
+{
+ "persistence": {
+  "MAE": 0.5134074091911316,
+  "RMSE": 0.786953818424025,
+  "R2": 0.6454893946647644
+ },
+ "MLP": {
+  "MAE": [
+   0.46009986599286395,
+   0.026304709695161476
+  ],
+  "RMSE": [
+   0.6560476750732941,
+   0.02865770819188592
+  ],
+  "R2": [
+   0.753152092297872,
+   0.021857126308296306
+  ],
+  "epochs": [
+   29.666666666666668,
+   4.988876515698588
+  ],
+  "secs": [
+   11.301938533782959,
+   0.4050434451919317
+  ],
+  "params": [
+   60673.0,
+   0.0
+  ]
+ },
+ "1D-CNN": {
+  "MAE": [
+   0.44017359614372253,
+   0.005548188137947646
+  ],
+  "RMSE": [
+   0.6248302922283177,
+   0.004182911507974067
+  ],
+  "R2": [
+   0.7765016357103983,
+   0.002985868424210792
+  ],
+  "epochs": [
+   20.666666666666668,
+   5.312459150169742
+  ],
+  "secs": [
+   22.921162684758503,
+   3.09654080500074
+  ],
+  "params": [
+   30145.0,
+   0.0
+  ]
+ },
+ "LSTM": {
+  "MAE": [
+   0.4836468795935313,
+   0.028630339352212462
+  ],
+  "RMSE": [
+   0.6644654364660374,
+   0.036485438618370024
+  ],
+  "R2": [
+   0.7464970548947653,
+   0.027655137905198173
+  ],
+  "epochs": [
+   26.666666666666668,
+   1.8856180831641267
+  ],
+  "secs": [
+   70.08069904645284,
+   4.418496941160795
+  ],
+  "params": [
+   34497.0,
+   0.0
+  ]
+ },
+ "Transformer": {
+  "MAE": [
+   0.5035532712936401,
+   0.02153968960650436
+  ],
+  "RMSE": [
+   0.7061879621374448,
+   0.017116429830927423
+  ],
+  "R2": [
+   0.7143551111221313,
+   0.013944315676506926
+  ],
+  "epochs": [
+   20.333333333333332,
+   0.9428090415820634
+  ],
+  "secs": [
+   56.41669487953186,
+   2.528969555436743
+  ],
+  "params": [
+   19521.0,
+   0.0
+  ]
+ }
+}
+DONE
