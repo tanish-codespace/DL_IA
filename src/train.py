@@ -61,3 +61,4 @@ def main(which=None):
 
 if __name__ == "__main__":
     main(sys.argv[1:] or None)
+# Checked learning rate stability 
