@@ -9,6 +9,7 @@ def mlp(window, nf):            # Member 1 - classical neural baseline
     x = layers.Dense(128, activation="relu")(x)
     x = layers.Dropout(0.2)(x)
     x = layers.Dense(64, activation="relu")(x)
+    
     return Model(x_in, layers.Dense(1)(x), name="MLP")
 
 
