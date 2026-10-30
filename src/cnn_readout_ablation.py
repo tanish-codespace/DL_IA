@@ -1,4 +1,17 @@
-"""Select the 1D-CNN readout on the VALIDATION set only."""
+"""
+Select the 1D-CNN readout on the VALIDATION set only.
+
+This experiment compares two readout strategies:
+1. GAP (Global Average Pooling)
+2. Last time-step output
+
+Each strategy is trained using three random seeds (0, 1, 2).
+Early stopping is used during training, and validation MAE
+is calculated for each run. The mean and standard deviation
+of MAE are saved for comparison.
+
+The validation set is used for model selection.
+"""
 import os, sys, json; os.environ["TF_CPP_MIN_LOG_LEVEL"]="3"
 import numpy as np, tensorflow as tf
 sys.path.insert(0, os.path.dirname(__file__))
