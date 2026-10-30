@@ -1,0 +1,13 @@
+MLP 0 {'window': 24} 0 0.6001 {'epochs': 33, 'secs': 31.468318700790405, 'params': 60673}
+MLP 0 {'window': 24} 1 0.5883 {'epochs': 26, 'secs': 26.16120457649231, 'params': 60673}
+MLP 1 {'window': 12} 0 0.6138 {'epochs': 23, 'secs': 23.541221618652344, 'params': 34561}
+MLP 1 {'window': 12} 1 0.5678 {'epochs': 44, 'secs': 40.22569131851196, 'params': 34561}
+MLP 2 {'window': 48} 0 0.6642 {'epochs': 26, 'secs': 29.189980268478394, 'params': 112897}
+MLP 2 {'window': 48} 1 0.6438 {'epochs': 26, 'secs': 31.400920629501343, 'params': 112897}
+MLP 3 {'window': 24, 'units': [256, 128]} 0 0.6643 {'epochs': 21, 'secs': 27.524754524230957, 'params': 137729}
+MLP 3 {'window': 24, 'units': [256, 128]} 1 0.5999 {'epochs': 34, 'secs': 40.20164632797241, 'params': 137729}
+MLP 4 {'window': 24, 'dropout': 0.3, 'l2': 0.0001} 0 0.5808 {'epochs': 26, 'secs': 23.933878660202026, 'params': 60673}
+MLP 4 {'window': 24, 'dropout': 0.3, 'l2': 0.0001} 1 0.5975 {'epochs': 32, 'secs': 29.029072046279907, 'params': 60673}
+MLP 5 {'window': 48, 'dropout': 0.3, 'l2': 0.0001} 0 0.6602 {'epochs': 31, 'secs': 36.110920429229736, 'params': 112897}
+MLP 5 {'window': 48, 'dropout': 0.3, 'l2': 0.0001} 1 0.6282 {'epochs': 32, 'secs': 36.5330970287323, 'params': 112897}
+MLP best config 4 {'cfg': {'window': 24, 'dropout': 0.3, 'l2': 0.0001}, 'val_mae': [0.5891446173191071, 0.008328348398208618], 'params': 60673}

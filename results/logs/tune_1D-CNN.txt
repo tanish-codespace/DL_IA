@@ -1,0 +1,15 @@
+WARNING:tensorflow:From C:\Users\merli\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+1D-CNN 0 {'window': 24} 0 0.568 {'epochs': 27, 'secs': 61.93208026885986, 'params': 30145}
+1D-CNN 0 {'window': 24} 1 0.602 {'epochs': 25, 'secs': 60.483762979507446, 'params': 30145}
+1D-CNN 1 {'window': 24, 'dilations': [1, 2, 4, 8]} 0 0.608 {'epochs': 20, 'secs': 65.64430236816406, 'params': 42497}
+1D-CNN 1 {'window': 24, 'dilations': [1, 2, 4, 8]} 1 0.6173 {'epochs': 15, 'secs': 49.32721543312073, 'params': 42497}
+1D-CNN 2 {'window': 24, 'kernel': 5} 0 0.5933 {'epochs': 20, 'secs': 51.20630431175232, 'params': 48705}
+1D-CNN 2 {'window': 24, 'kernel': 5} 1 0.5979 {'epochs': 20, 'secs': 52.43293809890747, 'params': 48705}
+1D-CNN 3 {'window': 24, 'dilations': [1, 1, 1]} 0 0.5527 {'epochs': 23, 'secs': 47.721035957336426, 'params': 30145}
+1D-CNN 3 {'window': 24, 'dilations': [1, 1, 1]} 1 0.6101 {'epochs': 26, 'secs': 51.77021551132202, 'params': 30145}
+1D-CNN 4 {'window': 48, 'dilations': [1, 2, 4, 8]} 0 0.6132 {'epochs': 23, 'secs': 85.28817701339722, 'params': 42497}
+1D-CNN 4 {'window': 48, 'dilations': [1, 2, 4, 8]} 1 0.6347 {'epochs': 19, 'secs': 72.32678008079529, 'params': 42497}
+1D-CNN 5 {'window': 24, 'filters': 32} 0 0.609 {'epochs': 27, 'secs': 38.80934715270996, 'params': 8961}
+1D-CNN 5 {'window': 24, 'filters': 32} 1 0.5972 {'epochs': 29, 'secs': 34.107638359069824, 'params': 8961}
+1D-CNN best config 3 {'cfg': {'window': 24, 'dilations': [1, 1, 1]}, 'val_mae': [0.581382691860199, 0.028691589832305908], 'params': 30145}

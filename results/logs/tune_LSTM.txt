@@ -1,0 +1,13 @@
+LSTM 0 {'window': 24} 0 0.6406 {'epochs': 18, 'secs': 104.08890652656555, 'params': 34497}
+LSTM 0 {'window': 24} 1 0.6253 {'epochs': 27, 'secs': 153.66345882415771, 'params': 34497}
+LSTM 1 {'window': 24, 'clipnorm': 1.0} 0 0.6398 {'epochs': 18, 'secs': 99.80368661880493, 'params': 34497}
+LSTM 1 {'window': 24, 'clipnorm': 1.0} 1 0.626 {'epochs': 21, 'secs': 113.66060590744019, 'params': 34497}
+LSTM 2 {'window': 24, 'clipnorm': 1.0, 'reduce_lr': True} 0 0.6224 {'epochs': 28, 'secs': 132.4742774963379, 'params': 34497}
+LSTM 2 {'window': 24, 'clipnorm': 1.0, 'reduce_lr': True} 1 0.626 {'epochs': 21, 'secs': 89.78009128570557, 'params': 34497}
+LSTM 3 {'window': 24, 'clipnorm': 1.0, 'units': [32]} 0 0.5959 {'epochs': 29, 'secs': 75.55759024620056, 'params': 7489}
+LSTM 3 {'window': 24, 'clipnorm': 1.0, 'units': [32]} 1 0.5837 {'epochs': 42, 'secs': 116.25198554992676, 'params': 7489}
+LSTM 4 {'window': 12, 'clipnorm': 1.0} 0 0.5991 {'epochs': 39, 'secs': 154.12992978096008, 'params': 34497}
+LSTM 4 {'window': 12, 'clipnorm': 1.0} 1 0.6018 {'epochs': 26, 'secs': 109.43371677398682, 'params': 34497}
+LSTM 5 {'window': 48, 'clipnorm': 1.0} 0 0.6368 {'epochs': 18, 'secs': 212.76972031593323, 'params': 34497}
+LSTM 5 {'window': 48, 'clipnorm': 1.0} 1 0.6107 {'epochs': 26, 'secs': 340.4117760658264, 'params': 34497}
+LSTM best config 3 {'cfg': {'window': 24, 'clipnorm': 1.0, 'units': [32]}, 'val_mae': [0.5897839963436127, 0.006108134984970093], 'params': 7489}

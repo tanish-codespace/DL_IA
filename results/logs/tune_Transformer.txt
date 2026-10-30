@@ -1,0 +1,15 @@
+WARNING:tensorflow:From C:\Users\merli\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+Transformer 0 {'window': 24} 0 0.6853 {'epochs': 15, 'secs': 99.68141913414001, 'params': 19521}
+Transformer 0 {'window': 24} 1 0.6449 {'epochs': 20, 'secs': 129.09829235076904, 'params': 19521}
+Transformer 1 {'window': 24, 'd': 16, 'heads': 2, 'ff': 32} 0 0.6959 {'epochs': 44, 'secs': 173.32903480529785, 'params': 5697}
+Transformer 1 {'window': 24, 'd': 16, 'heads': 2, 'ff': 32} 1 0.6667 {'epochs': 22, 'secs': 90.42905282974243, 'params': 5697}
+Transformer 2 {'window': 24, 'd': 64, 'heads': 4, 'ff': 128} 0 0.6934 {'epochs': 11, 'secs': 104.8364520072937, 'params': 71745}
+Transformer 2 {'window': 24, 'd': 64, 'heads': 4, 'ff': 128} 1 0.6541 {'epochs': 23, 'secs': 194.4574167728424, 'params': 71745}
+Transformer 3 {'window': 24, 'dropout': 0.2} 0 0.6618 {'epochs': 26, 'secs': 175.77133750915527, 'params': 19521}
+Transformer 3 {'window': 24, 'dropout': 0.2} 1 0.6469 {'epochs': 20, 'secs': 164.2310757637024, 'params': 19521}
+Transformer 4 {'window': 24, 'warmup': 5} 0 0.6679 {'epochs': 28, 'secs': 209.58982968330383, 'params': 19521}
+Transformer 4 {'window': 24, 'warmup': 5} 1 0.651 {'epochs': 24, 'secs': 181.14472484588623, 'params': 19521}
+Transformer 5 {'window': 48} 0 0.6756 {'epochs': 13, 'secs': 151.59068822860718, 'params': 20289}
+Transformer 5 {'window': 48} 1 0.6697 {'epochs': 23, 'secs': 405.9132332801819, 'params': 20289}
+Transformer best config 3 {'cfg': {'window': 24, 'dropout': 0.2}, 'val_mae': [0.6543667912483215, 0.007464945316314697], 'params': 19521}

@@ -1,0 +1,5 @@
+MLP 0 {'val_MAE': 0.5808, 'MAE': 0.4504, 'RMSE': 0.6428, 'R2': 0.7655, 'epochs': 26, 'secs': 25.5373, 'params': 60673}
+MLP 1 {'val_MAE': 0.5975, 'MAE': 0.4484, 'RMSE': 0.6395, 'R2': 0.7679, 'epochs': 32, 'secs': 28.6568, 'params': 60673}
+MLP 2 {'val_MAE': 0.5756, 'MAE': 0.4399, 'RMSE': 0.6204, 'R2': 0.7815, 'epochs': 43, 'secs': 38.4539, 'params': 60673}
+MLP 3 {'val_MAE': 0.5965, 'MAE': 0.4866, 'RMSE': 0.6575, 'R2': 0.7546, 'epochs': 30, 'secs': 25.9703, 'params': 60673}
+MLP 4 {'val_MAE': 0.5668, 'MAE': 0.4534, 'RMSE': 0.6378, 'R2': 0.7691, 'epochs': 31, 'secs': 20.6611, 'params': 60673}

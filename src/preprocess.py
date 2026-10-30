@@ -30,7 +30,11 @@ def add_time_features(df):
     return df
 
 
-def build(path="data/AirQualityUCI.csv", window=WINDOW):
+def build(path="data/AirQualityUCI.csv", window=WINDOW, align=None):
+    """align: if set (>= window), keep only targets that would also have a full
+    `align`-hour window inside their split, so runs with different window
+    lengths are scored on exactly the same target hours."""
+    align = max(window, align or window)
     raw = load(path)
     n = len(raw)
     i_tr, i_va = int(n*TRAIN_FRAC), int(n*(TRAIN_FRAC+VAL_FRAC))
@@ -59,6 +63,7 @@ def build(path="data/AirQualityUCI.csv", window=WINDOW):
     splits = {"train": ([], []), "val": ([], []), "test": ([], [])}
     persist = {"train": [], "val": [], "test": []}
     co_col = list(feat.columns).index(TARGET)
+    target_idx = {"train": [], "val": [], "test": []}
     for t in range(window-1, n-1):
         tgt = t + 1
         if not target_observed[tgt]:
@@ -71,11 +76,12 @@ def build(path="data/AirQualityUCI.csv", window=WINDOW):
             s, start = "val", i_tr
         else:
             s, start = "test", i_va
-        if t-window+1 < start:
+        if t-align+1 < start:
             continue
         splits[s][0].append(X_all[t-window+1:t+1])
         splits[s][1].append((y_all[tgt]-y_mu)/y_sd)
         persist[s].append(X_all[t, co_col]*y_sd + y_mu)  # naive reference
+        target_idx[s].append(tgt)
 
     out = {k: (np.stack(v[0]), np.array(v[1], "float32")) for k, v in splits.items()}
     meta = dict(features=list(feat.columns), y_mu=y_mu, y_sd=y_sd,
@@ -84,6 +90,7 @@ def build(path="data/AirQualityUCI.csv", window=WINDOW):
                              "val": (raw.index[i_tr], raw.index[i_va-1]),
                              "test": (raw.index[i_va], raw.index[-1])},
                 persistence={k: np.array(v) for k, v in persist.items()},
+                target_time={k: raw.index[v] for k, v in target_idx.items()},
                 missing_pct=(raw.isna().mean()*100).round(1).to_dict())
     return out, meta
 

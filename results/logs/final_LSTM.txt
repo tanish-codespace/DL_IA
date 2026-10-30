@@ -1,0 +1,5 @@
+LSTM 0 {'val_MAE': 0.5959, 'MAE': 0.4418, 'RMSE': 0.6329, 'R2': 0.7726, 'epochs': 29, 'secs': 92.9883, 'params': 7489}
+LSTM 1 {'val_MAE': 0.5837, 'MAE': 0.4353, 'RMSE': 0.6245, 'R2': 0.7786, 'epochs': 42, 'secs': 225.6258, 'params': 7489}
+LSTM 2 {'val_MAE': 0.5898, 'MAE': 0.4615, 'RMSE': 0.642, 'R2': 0.7661, 'epochs': 28, 'secs': 195.0662, 'params': 7489}
+LSTM 3 {'val_MAE': 0.5705, 'MAE': 0.445, 'RMSE': 0.6213, 'R2': 0.7809, 'epochs': 53, 'secs': 245.0268, 'params': 7489}
+LSTM 4 {'val_MAE': 0.5873, 'MAE': 0.4589, 'RMSE': 0.6331, 'R2': 0.7725, 'epochs': 30, 'secs': 130.5605, 'params': 7489}
