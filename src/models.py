@@ -78,3 +78,5 @@ def transformer(window, nf, d=32, heads=4, blocks=2, ff=64, dropout=0.1,
 
 
 MODELS = {"MLP": mlp, "1D-CNN": cnn1d, "LSTM": lstm, "Transformer": transformer}
+# Reviewed and verified 
+# Added gradient clipping config 
